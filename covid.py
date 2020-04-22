@@ -7,7 +7,7 @@ colnames = ['Date', 'Country_Region', 'Province_State', 'Case_Type', 'Cases', 'L
 df = df_raw[colnames]
 
 df['Date'] = pd.to_datetime(df['Date'])
-
+#test
 polska = df.loc[df['Country_Region'] == 'Poland']
 
 #polska_pivot = polska.pivot_table(index = 'Date',columns = 'Case_Type', values = 'Cases', aggfunc="sum")
